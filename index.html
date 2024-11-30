@@ -2,24 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Webpage</title>
+    <title>Maple's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Webpage</h1>
-    </header>
+
+    <h1>Maple's Portfolio</h1>
+
+    <nav>
+        <button id="aboutBtn">About</button>
+        <button id="projectsBtn">Projects</button>
+        <button id="contactBtn">Contact</button>
+    </nav>
+
     <main>
-        <div class="button-container">
-            <button id="about-btn">About</button>
-            <button id="projects-btn">Projects</button>
-            <button id="contact-btn">Contact</button>
-        </div>
+        <section id="aboutSection" class="active">
+            <h2>About Me</h2>
+            <p>This is where you can add information about yourself.</p>
+        </section>
+
+        <section id="projectsSection">
+            <h2>Projects</h2>
+            <p>This is where you can showcase images from your art projects.</p>
+            <!-- Add your project images here -->
+        </section>
+
+        <section id="contactSection">
+            <h2>Contact</h2>
+            <p>This is where you can provide your social media links and contact information.</p>
+            <!-- Add your social media links here -->
+        </section>
     </main>
-    <footer>
-        <p>© 2024 All rights reserved.</p>
-    </footer>
-    <script src="script.js" defer></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

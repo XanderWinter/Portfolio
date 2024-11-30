@@ -1,58 +1,59 @@
-/* General Page Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
 }
 
-/* Header Styles */
-header {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* Header */
 h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-/* Button Container */
-.button-container {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-/* Button Styles */
-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    button:active {
-        background-color: #003f7f;
-    }
-
-/* Footer */
-footer {
-    margin-top: 20px;
     text-align: center;
-    font-size: 0.9rem;
-    color: #666;
+    padding: 20px;
+    background-color: #f8f8f8;
 }
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+    nav button {
+        margin: 0 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #444;
+        border: none;
+        cursor: pointer;
+    }
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+/* Main Content */
+main {
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    display: none;
+}
+
+    section.active {
+        display: block;
+    }
+
+    /* Section Headings */
+    section h2 {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    /* Paragraphs */
+    section p {
+        line-height: 1.6;
+    }

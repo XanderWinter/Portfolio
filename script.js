@@ -1,28 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Select buttons
-    const aboutBtn = document.getElementById('about-btn');
-    const projectsBtn = document.getElementById('projects-btn');
-    const contactBtn = document.getElementById('contact-btn');
-
-    // Add event listeners
-    if (aboutBtn) {
-        aboutBtn.addEventListener('click', () => {
-            console.log('About button clicked');
-            alert('You clicked the About button!');
-        });
-    }
-
-    if (projectsBtn) {
-        projectsBtn.addEventListener('click', () => {
-            console.log('Projects button clicked');
-            alert('You clicked the Projects button!');
-        });
-    }
-
-    if (contactBtn) {
-        contactBtn.addEventListener('click', () => {
-            console.log('Contact button clicked');
-            alert('You clicked the Contact button!');
-        });
-    }
+// Button Event Listeners
+document.getElementById('aboutBtn').addEventListener('click', function () {
+    showSection('aboutSection');
 });
+
+document.getElementById('projectsBtn').addEventListener('click', function () {
+    showSection('projectsSection');
+});
+
+document.getElementById('contactBtn').addEventListener('click', function () {
+    showSection('contactSection');
+});
+
+// Function to Display the Selected Section
+function showSection(sectionId) {
+    var sections = document.querySelectorAll('main section');
+    sections.forEach(function (section) {
+        if (section.id === sectionId) {
+            section.classList.add('active');
+        } else {
+            section.classList.remove('active');
+        }
+    });
+}
