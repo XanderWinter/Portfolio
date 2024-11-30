@@ -18,25 +18,18 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I’m an artist exploring digital art and 3D designs.</p>
+            <p>Welcome to my portfolio! I’m an artist exploring digital art and 3D design.</p>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="gallery-container">
-                <!-- Gallery items -->
+                <!-- Only one gallery item -->
                 <div class="gallery-item" data-title="Demon Girl Profile Picture" data-description="This is an anime styled profile picture">
                     <img src="images/Demongirl.png" alt="Demon Girl Profile Picture">
                     <div class="hover-overlay">
-                        <p>Artwork 1</p>
+                        <p>Demon Girl</p>
                     </div>
                 </div>
-                <div class="gallery-item" data-title="ChillDog" data-description="Just a chill dog">
-                    <img src="images/Chill Dog.webp" alt="ChillDog">
-                    <div class="hover-overlay">
-                        <p>Chill</p>
-                    </div>
-                </div>
-                <!-- Add more items as needed -->
             </div>
         </section>
         <section id="contact">
@@ -49,7 +42,13 @@
         <p>© 2024 All rights reserved.</p>
     </footer>
 
-    <!-- Add script.js reference -->
+    <!-- Modal for artwork details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
