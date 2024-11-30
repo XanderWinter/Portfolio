@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Xander Winter</h1>
+        <h1>Maple</h1>
         <nav>
             <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
@@ -18,22 +18,46 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I’m an artist exploring both 3d art and a 2d drawn anime style.</p>
+            <p>Welcome to my portfolio! I’m an artist exploring digital art and 3D design.</p>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="gallery-container">
-                <!-- Add images or artwork -->
+                <!-- Gallery items -->
+                <div class="gallery-item" data-title="Artwork 1" data-description="A detailed description of Artwork 1">
+                    <img src="art1.jpg" alt="Artwork 1">
+                    <div class="hover-overlay">
+                        <p>Artwork 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-title="Artwork 2" data-description="A detailed description of Artwork 2">
+                    <img src="art2.jpg" alt="Artwork 2">
+                    <div class="hover-overlay">
+                        <p>Artwork 2</p>
+                    </div>
+                </div>
+                <!-- Add more items as needed -->
             </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Socials: [links]</p>
+            <p>Email: ;3</p>
+            <p>Socials: OwO</p>
         </section>
     </main>
     <footer>
         <p>© 2024 All rights reserved.</p>
     </footer>
+
+    <!-- Modal for artwork details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
