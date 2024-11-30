@@ -1,17 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Button event listeners
-    document.getElementById('about-btn').addEventListener('click', () => {
-        console.log('About button clicked');
-        alert('You clicked on About!');
-    });
+    // Select buttons
+    const aboutBtn = document.getElementById('about-btn');
+    const projectsBtn = document.getElementById('projects-btn');
+    const contactBtn = document.getElementById('contact-btn');
 
-    document.getElementById('projects-btn').addEventListener('click', () => {
-        console.log('Projects button clicked');
-        alert('You clicked on Projects!');
-    });
+    // Add event listeners
+    if (aboutBtn) {
+        aboutBtn.addEventListener('click', () => {
+            console.log('About button clicked');
+            alert('You clicked the About button!');
+        });
+    }
 
-    document.getElementById('contact-btn').addEventListener('click', () => {
-        console.log('Contact button clicked');
-        alert('You clicked on Contact!');
-    });
+    if (projectsBtn) {
+        projectsBtn.addEventListener('click', () => {
+            console.log('Projects button clicked');
+            alert('You clicked the Projects button!');
+        });
+    }
+
+    if (contactBtn) {
+        contactBtn.addEventListener('click', () => {
+            console.log('Contact button clicked');
+            alert('You clicked the Contact button!');
+        });
+    }
 });
