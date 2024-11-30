@@ -3,53 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maple's Portfolio</title>
+    <title>My Basic Webpage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Maple</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Welcome to My Webpage</h1>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I’m an artist exploring digital art and 3D design.</p>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <!-- Only one gallery item -->
-                <div class="gallery-item" data-title="Demon Girl Profile Picture" data-description="This is an anime styled profile picture">
-                    <img src="images/Demongirl.png" alt="Demon Girl Profile Picture">
-                    <div class="hover-overlay">
-                        <p>Demon Girl</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: ;3</p>
-            <p>Socials: OwO</p>
-        </section>
+        <div class="button-container">
+            <button id="about-btn">About</button>
+            <button id="projects-btn">Projects</button>
+            <button id="contact-btn">Contact</button>
+        </div>
     </main>
     <footer>
         <p>© 2024 All rights reserved.</p>
     </footer>
-
-    <!-- Modal for artwork details -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-        </div>
-    </div>
-
-    <!-- Script Reference -->
     <script src="script.js"></script>
 </body>
 </html>
