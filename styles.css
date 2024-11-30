@@ -38,22 +38,13 @@ main {
     padding: 0 20px;
 }
 
-/* Sections */
-section {
-    display: none;
+/* Section Headings */
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
-    section.active {
-        display: block;
-    }
-
-    /* Section Headings */
-    section h2 {
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 10px;
-    }
-
-    /* Paragraphs */
-    section p {
-        line-height: 1.6;
-    }
+/* Paragraphs */
+section p {
+    line-height: 1.6;
+}

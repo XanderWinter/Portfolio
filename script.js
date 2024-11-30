@@ -1,24 +1,30 @@
 // Button Event Listeners
 document.getElementById('aboutBtn').addEventListener('click', function () {
-    showSection('aboutSection');
+    loadSection('about.html');
 });
 
 document.getElementById('projectsBtn').addEventListener('click', function () {
-    showSection('projectsSection');
+    loadSection('projects.html');
 });
 
 document.getElementById('contactBtn').addEventListener('click', function () {
-    showSection('contactSection');
+    loadSection('contact.html');
 });
 
-// Function to Display the Selected Section
-function showSection(sectionId) {
-    var sections = document.querySelectorAll('main section');
-    sections.forEach(function (section) {
-        if (section.id === sectionId) {
-            section.classList.add('active');
-        } else {
-            section.classList.remove('active');
-        }
-    });
+// Function to Load and Display the Selected Section
+function loadSection(sectionFile) {
+    fetch(sectionFile)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById('mainContent').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading section:', error);
+            document.getElementById('mainContent').innerHTML = '<p>Sorry, an error occurred while loading the content.</p>';
+        });
 }
